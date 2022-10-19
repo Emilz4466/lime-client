@@ -1,0 +1,11 @@
+:root {
+    --login-bg: radial-gradient(circle, rgba(24,149,56,1) 0%, rgba(25,193,116,1) 50%, rgba(21,108,81,1) 100%);
+    --header-background: #198654FF;
+    --second-background:#7BE125ED;
+    --header-text: #363636;
+    --separator: #d9d9d9;
+    --white: #fff;
+    --btn-green: #198654FF;
+    --border:#198654FF;
+    --gray-border: #d9d9d9
+}
