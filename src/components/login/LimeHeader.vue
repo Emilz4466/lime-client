@@ -1,66 +1,60 @@
 <template>
- <div class="lime-header-container">
-   <div class="main-info">
-    <img src="../icons/main-logo.png" />
-     <h1 class="name">LIME HR</h1>
-   </div>
-   <div class="separator"></div>
-   <div class="sub-info">
-      <p>Portal kadrowo - płacowy</p>
-   </div>
- </div>
+  <div class="lime-header-container">
+    <div class="logo">
+      <img src="../icons/main-logo.png" alt="" />
+    </div>
+    <div class="info">
+      <h1 class="name">LIME HR</h1>
+      <p class="sub-text">Portal kadrowo - płacowy</p>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "LimeHeader.vue"
+  name: "LimeHeader.vue",
 };
 </script>
 
-<style scoped>
-  .lime-header-container {
-    display: grid;
-    grid-template-columns: 1fr 0fr 3fr;
-    width:100%;
-    background-color: #d2fd5a;
-    padding: 10px;
-    border-radius: 10px;
+<style>
+@import "../../assets/global-vars.css";
+.lime-header-container {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+}
 
+img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.name {
+  font-family: "Righteous", cursive;
+  display: inline-block;
+  font-size: 20px;
+  color: var(--header-text);
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 3px;
+}
+
+.info {
+  margin-left: 10px;
+  text-align: center;
+}
+
+.sub-text {
+  font-weight: bold;
+  color: var(--header-text);
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .info {
+    margin-left: 0;
   }
-
-  .main-info {
-
-  }
-
-  img {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin-right: 20px;
-
-  }
-
-  .name {
-    font-family: 'Righteous', cursive;
-    display: inline-block;
-    font-size: 20px;
-    color: #2c3e50;
-    font-weight: bold;
-    margin-bottom: 0px;
-    margin-top: 3px;
-  }
-
-  .separator {
-    width: 2px;
-    background-color: #2c3e50;
-  }
-
-  .sub-info {
-
-  }
-
-  .sub-info p {
-    color:#2c3e50;
-
-  }
+}
 </style>

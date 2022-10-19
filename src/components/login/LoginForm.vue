@@ -26,37 +26,37 @@
 
 <script>
 export default {
-  name: "LoginForm"
+  name: "LoginForm",
 };
 </script>
 
-<style scoped>
-  .form-container {
-  }
+<style>
+@import "../../assets/global-vars.css";
+.form-container {
+}
 
-  form{
-    flex-direction: column;
-    align-items: center;
-  }
-  input {
-    width:300px;
-    margin-bottom: 10px;
-  }
+.form-container form {
+  flex-direction: column;
+  align-items: center;
+}
+.form-container .input {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+.form-container .input input {
+  width: 95%;
+}
+.first-input {
+  margin-top: 20px;
+}
 
-  .first-input {
-    margin-top:20px;
-  }
+.form-container .input input::placeholder {
+  color: var(--white);
+  opacity: 0.5;
+}
 
-  input:focus {
-    box-shadow: none;
-  }
-
-  input::placeholder {
-    color: #fff;
-    opacity: .5;
-  }
-
-  button {
-    width: 200px;
-  }
+button {
+  width: 95%;
+}
 </style>
