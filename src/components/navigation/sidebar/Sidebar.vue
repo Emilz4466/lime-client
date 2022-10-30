@@ -1,13 +1,13 @@
 <template>
   <div class="sidebar-container">
-    <div class="header">
+    <header>
       <span class="logo">
-        <img src="../icons/main-logo.png" alt="" />
+        <img src="../../icons/main-logo.png" alt="" />
       </span>
       <h1>
         <span class="name">LIME HR</span>
       </h1>
-    </div>
+    </header>
     <div class="separator"></div>
     <div class="user">
       <img v-bind:src="userPhoto" />
@@ -44,7 +44,6 @@ export default {
   background-color: var(--sidebar-bg);
   float: left;
   position: fixed;
-  z-index: 1;
   top: 0;
   left: 0;
   bottom: 0;
@@ -52,8 +51,10 @@ export default {
   transition: 0.3s ease;
   display: flex;
   flex-direction: column;
+  border-radius: 0 10px 10px 0;
+  z-index: 9999;
 }
-.header {
+header {
   display: flex;
   align-items: center;
   line-height: 3.2em;
@@ -97,5 +98,12 @@ img {
 }
 .sidebar h1 {
   height: 2.5em;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar-container {
+    display: none;
+    visibility: hidden;
+  }
 }
 </style>

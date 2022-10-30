@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="to" class="link">
+  <router-link :to="to" class="link" :class="{ active: isActive }">
     <font-awesome-icon :icon="['fas', icon]" class="icon" />
     <transition name="fade">
       <span>
@@ -10,13 +10,20 @@
 </template>
 
 <script>
-import "../../components/icons/IconManager";
+import { computed } from "vue";
+import { useRoute } from "vue-router";
 
 export default {
   name: "SidebarLink",
   props: {
     to: { type: String, required: true },
     icon: { type: String, required: true },
+  },
+  setup(props) {
+    const route = useRoute();
+    const isActive = computed(() => route.path === props.to);
+
+    return { isActive };
   },
 };
 </script>
@@ -39,6 +46,9 @@ export default {
 }
 .link:hover {
   background-color: var(--sidebar-item-hover);
+}
+.link.active {
+  background-color: var(--sidebar-item-active);
 }
 .link .icon {
   flex-shrink: 0;

@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import "../../components/icons/IconManager.js";
+import "../../icons/IconManager.js";
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Topbar",
@@ -49,6 +49,7 @@ export default {
   justify-content: space-between;
   top: 0;
   color: var(--btn-green);
+  z-index: 9998;
 }
 header {
   margin-left: 200px;
@@ -72,5 +73,10 @@ b-nav-item:hover {
 b-nav-item svg {
   margin-top: 10px;
   margin-right: 10px;
+}
+@media only screen and (max-width: 768px) {
+  header {
+    margin-left: 20px;
+  }
 }
 </style>
