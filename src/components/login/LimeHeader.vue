@@ -16,8 +16,7 @@ export default {
 };
 </script>
 
-<style>
-@import "../../assets/global-vars.css";
+<style scoped>
 .lime-header-container {
   display: flex;
   width: 100%;

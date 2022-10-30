@@ -23,7 +23,7 @@
 
 /* semantic color variables for this project */
 :root {
-  --color-background: radial-gradient(circle, rgba(24,149,56,1) 0%, rgba(25,193,116,1) 50%, rgba(21,108,81,1) 100%);
+  --color-background: var(--main-background);
   --color-background-soft: var(--vt-c-white-soft);
   --color-background-mute: var(--vt-c-white-mute);
 
@@ -36,9 +36,37 @@
   --section-gap: 160px;
 }
 
+/* main color variables */
+:root {
+  --login-bg: radial-gradient(circle, rgba(24,149,56,1) 0%, rgba(25,193,116,1) 50%, rgba(21,108,81,1) 100%);
+  --header-background: #0d442b;
+  --second-background: #0d3824;
+  --header-text: #c2c2c2;
+  --separator: #d9d9d9;
+  --white: #fff;
+  --btn-green: #198654FF;
+  --btn-green-hover: #177349;
+  --border:#198654FF;
+  --gray-border: #d9d9d9;
+  --error: #FF0000FF;
+  --error-bg: #737373;
+
+  /* */
+
+  --sidebar-bg: var(--header-background);
+  --sidebar-item-hover: #083623;
+  --sidebar-item-active: var(--sidebar-item-hover);
+  --sidebar-text: var(--header-text);
+  --sidebar-collapse-icon: var(--sidebar-text);
+
+  /* */
+
+  --main-background: #eaeaea;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background: radial-gradient(circle, rgba(24,149,56,1) 0%, rgba(25,193,116,1) 50%, rgba(21,108,81,1) 100%);
+    --color-background: var(--main-background);
     --color-background-soft: var(--vt-c-black-soft);
     --color-background-mute: var(--vt-c-black-mute);
 
@@ -71,4 +99,10 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.view-container {
+  position: fixed;
+  top:70px;
+  left: 200px;
 }

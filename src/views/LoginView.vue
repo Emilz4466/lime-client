@@ -13,14 +13,18 @@ export default {
 };
 </script>
 
-<style>
-@import "../assets/global-vars.css";
+<style scoped>
+:root {
+  --gray-border: #d9d9d9;
+  --header-background: #0d442b;
+}
 main {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   border: 1px solid var(--gray-border);
-  border-radius: 10px;
+  border-radius: 2px;
   padding: 5px;
-  background-color: transparent;
+  background-color: var(--header-background);
   width: 350px;
   box-shadow: 0 0 20px 10px var(--header-background);
 }
