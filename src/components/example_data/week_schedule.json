@@ -1,0 +1,53 @@
+{
+  "employee": "Emil Zyberski",
+  "week_schedule": [
+    {
+      "name": "Poniedziałek",
+      "date": "14.11.2022",
+      "is_day_off": false,
+      "is_vacation": true,
+      "work_hour_start": "8:00",
+      "work_hour_end": "16:00"
+    },
+    {
+      "name": "Wtorek",
+      "date": "15.11.2022",
+      "is_day_off": false,
+      "is_vacation": true,
+      "work_hour_start": "8:00",
+      "work_hour_end": "16:00"
+    },
+    {
+      "name": "Środa",
+      "date": "16.11.2022",
+      "is_day_off": false,
+      "is_vacation": true
+    },
+    {
+      "name": "Czwartek",
+      "date": "17.11.2022",
+      "is_day_off": false,
+      "is_vacation": true,
+      "work_hour_start": "8:00",
+      "work_hour_end": "16:00"
+    },
+    {
+      "name": "Piątek",
+      "date": "18.11.2022",
+      "is_day_off": false,
+      "is_vacation": true,
+      "work_hour_start": "8:00",
+      "work_hour_end": "16:00"
+    },
+    {
+      "name": "Sobota",
+      "date": "19.11.2022",
+      "is_day_off": true
+    },
+    {
+      "name": "Niedziela",
+      "date": "20.11.2022",
+      "is_day_off": true
+    }
+  ]
+}

@@ -6,59 +6,7 @@
   <main class="view-container">
     <div class="fog">
       <div class="dashboard-container">
-        <h1>Przykładowy komponent</h1>
-        <p>1. asdasdsad</p>
-        <p>2. Tdsadasdka)</p>
-        <p>3. xzcxzczxcsja sxczzxcra)</p>
-      </div>
-    </div>
-    <div class="fog">
-      <div class="dashboard-container">
-        <b-table striped hover :items="items"></b-table>
-        <h1>TODO Zrobić tabele bootstrapową!</h1>
-        <p>1. asdasdsad</p>
-        <p>2. Tdsadasdka)</p>
-        <p>3. xzcxzczxcsja sxczzxcra)</p>
-      </div>
-    </div>
-    <div class="fog">
-      <div class="dashboard-container">
-        <h1>TODO</h1>
-        <p>1. Poprawki w sidebarze (wielkosci, ulozenie)</p>
-        <p>2. Topbar (wylogowanie, ustawienia uzytkownika)</p>
-        <p>3. Bottom navigation (mobilna wersja sidebara)</p>
-      </div>
-    </div>
-    <div class="fog">
-      <div class="dashboard-container">
-        <h1>Przykładowy komponent</h1>
-        <p>1. asdasdsad</p>
-        <p>2. Tdsadasdka)</p>
-        <p>3. xzcxzczxcsja sxczzxcra)</p>
-      </div>
-    </div>
-    <div class="fog">
-      <div class="dashboard-container">
-        <h1>Przykładowy komponent</h1>
-        <p>1. asdasdsad</p>
-        <p>2. Tdsadasdka)</p>
-        <p>3. xzcxzczxcsja sxczzxcra)</p>
-      </div>
-    </div>
-    <div class="fog">
-      <div class="dashboard-container">
-        <h1>Przykładowy komponent</h1>
-        <p>1. asdasdsad</p>
-        <p>2. Tdsadasdka)</p>
-        <p>3. xzcxzczxcsja sxczzxcra)</p>
-      </div>
-    </div>
-    <div class="fog">
-      <div class="dashboard-container">
-        <h1>Przykładowy komponent</h1>
-        <p>1. asdasdsad</p>
-        <p>2. Tdsadasdka)</p>
-        <p>3. xzcxzczxcsja sxczzxcra)</p>
+        <WorkScheduler />
       </div>
     </div>
   </main>
@@ -68,9 +16,10 @@
 import Sidebar from "/src/components/navigation/sidebar/Sidebar.vue";
 import Topbar from "/src/components/navigation/topbar/Topbar.vue";
 import Bottombar from "/src/components/navigation/bottombar/Bottombar.vue";
+import WorkScheduler from "/src/components/main-components/WorkScheduler.vue";
 export default {
   name: "DashboardView.vue",
-  components: { Sidebar, Topbar, Bottombar },
+  components: { Sidebar, Topbar, Bottombar, WorkScheduler },
   data() {
     return {
       fields: ["first_name", "last_name", "age"],

@@ -115,6 +115,24 @@ body {
   flex-wrap: wrap;
 }
 
+.component-header {
+  color: var(--base-label);
+  font-size: 17px;
+  margin-left: 7px;
+}
+.separator {
+  display: flex;
+  justify-content: center;
+  height:1px;
+  width:100%;
+}
+.inner-separator {
+
+  height: 1px;
+  width:97%;
+  background-color: var(--bs-border-color);
+}
+
 @media only screen and (max-width: 768px) {
   .view-container {
     margin-top: 20px;
