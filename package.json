@@ -2,12 +2,13 @@
   "name": "lime-hr-client",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview --port 4173",
     "test:unit": "vitest --environment jsdom",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "dev": "vite",
+    "preview": "vite preview --port 4173"
   },
+  "type": "module",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/free-brands-svg-icons": "^6.2.0",
@@ -15,9 +16,9 @@
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/vue-fontawesome": "^3.0.1",
     "@popperjs/core": "^2.11.5",
-    "bootstrap": "^5.2.0-beta1",
-    "bootstrap-vue": "^2.22.0",
-    "vue": "^3.2.37",
+    "bootstrap": "^5.2.2",
+    "bootstrap-vue": "^2.23.1",
+    "vue": "^3.2.45",
     "vue-router": "^4.1.2"
   },
   "devDependencies": {
@@ -28,8 +29,8 @@
     "eslint": "^8.5.0",
     "eslint-plugin-vue": "^9.0.0",
     "jsdom": "^20.0.0",
-    "less": "^3.11.3",
     "prettier": "^2.5.1",
+    "style-resources-loader": "^1.4.1",
     "vite": "^3.0.1",
     "vitest": "^0.18.1"
   }
