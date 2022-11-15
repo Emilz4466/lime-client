@@ -32,7 +32,7 @@ main {
 @media only screen and (max-width: 768px) {
   main {
     width: 300px;
-    display: block;
+    display: flex;
     margin: auto;
   }
 }
